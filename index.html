@@ -19,18 +19,7 @@
       .sidebar-icon {
         @apply h-12 w-12 flex items-center justify-center;
       }
-      .profile-circle {
-        @apply rounded-full bg-purple-600 text-white flex items-center justify-center text-3xl font-bold;
-      }
-      .contact-circle {
-        @apply w-10 h-10 rounded-full border border-gray-200 flex items-center justify-center text-blue-500;
-      }
-      .history-item {
-        @apply flex space-x-4 mb-6;
-      }
-      .history-icon {
-        @apply w-10 h-10 rounded-full flex items-center justify-center text-white flex-shrink-0;
-      }
+     
     </style>
   </head>
   <body class="bg-gray-50">
@@ -89,23 +78,23 @@
     <div class="flex">
       <!-- Left Sidebar -->
       <div class="w-16 bg-indigo-900 h-screen flex flex-col items-center py-4">
-        <div class="sidebar-icon bg-indigo-800 rounded-lg mb-6 relative">
+        <div class="h-12 w-12 flex items-center justify-center bg-indigo-400 rounded-[8px] mb-6 relative border-[3px] border-2 border-gray-300">
           <span class="text-white font-bold">D</span>
           <span
-            class="absolute -top-1 -right-1 bg-blue-500 rounded-full h-4 w-4 flex items-center justify-center text-xs text-white"
-            >3</span
+            class="absolute -bottom-1 -right-1 bg-green-500 rounded-full h-4 w-4 flex items-center justify-center text-xs text-white"
+            ></span
           >
         </div>
-        <div class="sidebar-icon text-white mb-4">
+        <div class="border-b-[1px] border-indigo-800 w-full flex items-center justify-center pb-6 text-white mb-6">
           <i class="fas fa-th"></i>
         </div>
-        <div class="sidebar-icon text-white mb-4">
+        <div class="border-b-[1px] border-indigo-800 text-white mb-4 w-full flex items-center justify-center pb-5">
           <i class="fas fa-chart-bar"></i>
         </div>
-        <div class="sidebar-icon text-white mb-4">
+        <div class="border-b-[1px] border-indigo-800 text-white mb-4 w-full flex items-center justify-center pb-5">
           <i class="fas fa-users"></i>
         </div>
-        <div class="sidebar-icon text-white mb-4">
+        <div class=" text-white mb-4 w-full flex items-center justify-center pb-5">
           <i class="fas fa-folder"></i>
         </div>
       </div>
