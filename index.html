@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Customer Profile - Nissan, India</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      .sidebar-icon {
+        @apply h-12 w-12 flex items-center justify-center;
+      }
+      .profile-circle {
+        @apply rounded-full bg-purple-600 text-white flex items-center justify-center text-3xl font-bold;
+      }
+      .contact-circle {
+        @apply w-10 h-10 rounded-full border border-gray-200 flex items-center justify-center text-blue-500;
+      }
+      .history-item {
+        @apply flex space-x-4 mb-6;
+      }
+      .history-icon {
+        @apply w-10 h-10 rounded-full flex items-center justify-center text-white flex-shrink-0;
+      }
+    </style>
+  </head>
+  <body class="bg-gray-50">
+    <!-- Top Navigation Bar -->
+    <nav class="bg-white border-gray-200 flex items-center justify-between p-3">
+      <div class="flex items-center">
+        <button class="text-blue-500 mr-4 ml-2">
+          <i class="fas fa-bars"></i>
+        </button>
+        <div class="flex items-center">
+          <img
+            src="./Nissan_logo.svg"
+            alt="Nissan Logo"
+            class="h-8 w-8 rounded-full mx-4"
+          />
+          <span class="ml-2 font-[500] text-[14px]">Nissan, India</span>
+          <i class="fas fa-chevron-right ml-2 text-gray-400 text-xs"></i>
+        </div>
+      </div>
+      <div class="flex items-center">
+        <div class="relative mx-2 mr-[32px] bg-gray-100 px-10 rounded-[4px]">
+          <i class="absolute fas fa-search left-3 top-3 text-gray-400"></i>
+          <input
+            type="text"
+            placeholder="Search..."
+            class="rounded-lg px-4 py-2 w-64 outline-none focus:none"
+          />
+        </div>
+        <div class="relative mx-2">
+          <i class="fas fa-bell text-gray-600"></i>
+          <span
+            class="absolute -top-2 -right-2 bg-blue-500 text-white text-xs rounded-full h-4 w-4 flex items-center justify-center"
+            >2</span
+          >
+        </div>
+        <button class="mx-4 text-gray-600">
+          <i class="fas fa-language"></i>
+        </button>
+        <button class="mx-4 text-gray-600">
+          <i class="fas fa-cog"></i>
+        </button>
+        <button class="mx-4 text-gray-600">
+          <i class="fas fa-question-circle"></i>
+        </button>
+        <button class="mx-4 text-gray-600">
+          <i class="fas fa-th bg-white"></i>
+        </button>
+        <div
+          class="w-8 h-8 ml-6 rounded-full bg-purple-600 text-white flex items-center justify-center ml-2"
+        >
+          <span>N</span>
+        </div>
+      </div>
+    </nav>
+
+    <div class="flex">
+      <!-- Left Sidebar -->
+      <div class="w-16 bg-indigo-900 h-screen flex flex-col items-center py-4">
+        <div class="sidebar-icon bg-indigo-800 rounded-lg mb-6 relative">
+          <span class="text-white font-bold">D</span>
+          <span
+            class="absolute -top-1 -right-1 bg-blue-500 rounded-full h-4 w-4 flex items-center justify-center text-xs text-white"
+            >3</span
+          >
+        </div>
+        <div class="sidebar-icon text-white mb-4">
+          <i class="fas fa-th"></i>
+        </div>
+        <div class="sidebar-icon text-white mb-4">
+          <i class="fas fa-chart-bar"></i>
+        </div>
+        <div class="sidebar-icon text-white mb-4">
+          <i class="fas fa-users"></i>
+        </div>
+        <div class="sidebar-icon text-white mb-4">
+          <i class="fas fa-folder"></i>
+        </div>
+      </div>
+
+      <!-- Main Content -->
+      <div class="container mx-auto p-4">
+        <h1 class="text-[24px] font-[500] text-gray-800 mb-4">
+          Customer Profile
+        </h1>
+
+        <div class="bg-white rounded-lg shadow">
+          <!-- Main content container -->
+          <div class="flex border-b border-gray-200">
+            <!-- Left Profile Section -->
+            <div class="border-r border-gray-200 p-6 w-2/6">
+              <div
+                class="flex items-center mb-6 pl-[24px] py-[28px] pr-3 border border-gray-200"
+              >
+                <div
+                  class="rounded-full bg-purple-600 text-white flex items-center justify-center text-3xl font-bold w-[56px] h-[56px] mr-[14px]"
+                >
+                  <span>M</span>
+                </div>
+                <div class="flex flex-col items-center">
+                  <h2 class="text-lg font-[500] text-[20px] ">Manmohan Singh</h2>
+                  <p class="text-gray-500 text-[12px] text-[#5f6368]">
+                    Joined 03 June, 2022 6:23 pm
+                  </p>
+                </div>
+              </div>
+
+              <!-- Contact Buttons -->
+              <div class="flex justify-evenly space-x-4 mb-8">
+                <div
+                  class="w-10 h-10 rounded-full border border-gray-200 flex items-center justify-center text-blue-[#0070fc] bg-[#F0F7FF]"
+                >
+                  <i class="fas fa-envelope text-[#0070fc]"></i>
+                </div>
+                <div
+                  class="w-10 h-10 rounded-full border border-gray-200 flex items-center justify-center text-blue-[#0070fc] bg-[#F0F7FF]"
+                >
+                  <i class="fas fa-phone text-[#0070fc]"></i>
+                </div>
+                <div
+                  class="w-10 h-10 rounded-full border border-gray-200 flex items-center justify-center text-blue-[#0070fc] bg-[#F0F7FF]"
+                >
+                  <i class="fab fa-whatsapp text-[#0070fc]"></i>
+                </div>
+                <div
+                  class="w-10 h-10 rounded-full border border-gray-200 flex items-center justify-center text-blue-[#0070fc] bg-[#F0F7FF]"
+                >
+                  <i class="fas fa-file-alt text-[#0070fc]"></i>
+                </div>
+              </div>
+
+              <!-- Contact Info -->
+              <div class="space-y-4 mb-8">
+                <div class="flex items-start">
+                  <i class="fas fa-phone text-[#5F6368] mt-1 mr-3"></i>
+                  <span class="text-[12px] text-[#5F6368]"
+                    >+ 91 9667555094</span
+                  >
+                </div>
+                <div class="flex items-start">
+                  <i class="fas fa-envelope text-[#5F6368] mt-1 mr-3"></i>
+                  <span class="text-[12px] text-[#5F6368]"
+                    >sushant@singleinterface.com</span
+                  >
+                </div>
+                <div class="flex items-start">
+                  <i class="fas fa-map-marker-alt text-[#5F6368] mt-1 mr-3"></i>
+                  <div>
+                    <span class="text-[12px] text-[#5F6368]"
+                      >241, Udyog Vihar Phase, Sector 20,</span
+                    ><br />
+                    <span class="text-gray-700">Gurugram, Haryana 122002</span>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Intent -->
+              <div class="mb-6">
+                <p class="text-[14px] font-[500] text-[#5f6368] mb-2">Intent</p>
+                <div class="flex space-x-2">
+                  <span
+                    class="px-4 py-1 text-[#0070FC] rounded-[4px] border-[1px] border-[#0070FC] text-[11px]"
+                    >Purchase</span
+                  >
+                  <span
+                    class="px-4 py-1 text-[#5F6368] rounded-[4px] border-[1px] border-[#5F6368] text-[11px]"
+                    >Engagement</span
+                  >
+                  <span
+                    class="px-4 py-1 text-[#5F6368] rounded-[4px] border-[1px] border-[#5F6368] text-[11px]"
+                    >Support</span
+                  >
+                </div>
+              </div>
+
+              <!-- Lead Type -->
+              <div class="mb-6">
+                <p
+                  class="text-gray-500 mb-2 text-[14px] font-[500] text-[#5f6368]"
+                >
+                  Lead Type
+                </p>
+                <div class="flex space-x-2">
+                  <span
+                    class="px-4 py-1 text-[#FF6200] border-[1px] border-[#FF6200] rounded-[4px] text-[11px]"
+                    >Hot</span
+                  >
+                  <span
+                    class="px-4 py-1 border-[1px] border-[#5F63684E] rounded-[4px] text-[11px] text-[#5f6368]"
+                    >Warm</span
+                  >
+                  <span
+                    class="px-4 py-1 border-[1px] border-[#5F63684E] border-0 rounded-[4px] text-[11px] text-[#5f6368]"
+                    >Cold</span
+                  >
+                </div>
+              </div>
+
+              <!-- Interests -->
+              <div>
+                <p class="text-[14px] font-[500] text-[#5f6368] mb-2">
+                  Interests
+                </p>
+                <div class="border border-gray-200 rounded-[4px] p-2">
+                  <div
+                    class="text-[#0E0071] border-[1px] border-[#2F6EF321] rounded-[4px] px-3 py-1 text-[10px] inline-flex items-center"
+                  >
+                    Strong Engine
+                    <button class="ml-2 text-blue-400">
+                      <i class="fas fa-times h-[9px] text-[#5F6368]"></i>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Right History Section -->
+            <div class="w-full">
+              <!-- Tabs -->
+              <div
+                class="flex border-gray-200 w-full border-b-[1px] border-[#2F6EF321] px-4"
+              >
+                <button
+                  class="px-6 py-4 text-[14px] font-[500] border-b-2 border-[#0070fc] font-medium"
+                >
+                  CUSTOMER HISTORY
+                </button>
+                <button class="px-6 py-4 text-[#5f6368] text-[14px] font-[500]">
+                  NOTES
+                </button>
+                <button class="px-6 py-4 text-[#5f6368] text-[14px] font-[500]">
+                  DOCS
+                </button>
+              </div>
+
+              <!-- History Items -->
+              <div class="flex pt-9 px-4">
+                <!-- icons -->
+                <div class="flex flex-col pr-4">
+                  <div class="w-10 h-10 rounded-full flex items-center justify-center text-white flex-shrink-0 bg-yellow-500">
+                    <i class="fas fa-shopping-bag"></i>
+                  </div>
+                  <div class="flex items-center justify-center">
+                      <div class="w-[5px] h-[100px] bg-gray-100 "></div>
+                  </div>
+                  <div class="w-10 h-10 rounded-full flex items-center justify-center text-white flex-shrink-0 bg-blue-500">
+                    <i class="fas fa-phone"></i>
+                  </div>
+                  <div class="flex items-center justify-center">
+                    <div class="w-[5px] h-[100px] bg-gray-100"></div>
+                </div>
+                  <div class="w-10 h-10 rounded-full flex items-center justify-center text-white flex-shrink-0 bg-green-500">
+                    <i class="fab fa-instagram"></i>
+                  </div>
+                  <div class="flex items-center justify-center">
+                    <div class="w-[5px] h-[100px] bg-gray-100"></div>
+                </div>
+                  <div class="w-10 h-10 rounded-full flex items-center justify-center text-white flex-shrink-0 bg-yellow-500">
+                    <i class="fas fa-shopping-bag "></i>
+                  </div>
+                </div>
+                <!-- history-item -->
+                <div class="w-9/10">
+                  <!-- 1 -->
+                  <div class="flex-1 mb-10">
+                    <div class="flex justify-between mb-2">
+                      <p class="text-[14px] text-[#333333] font-[500]">
+                        Made a purchase of Samsung Galaxy Z4 at price of
+                        Rs.12,999 only.
+                      </p>
+                      <div class="flex items-center text-[#657180] text-[12px] ">
+                        <span>06/10/23 12:54 PM</span>
+                        <button class="ml-2">
+                          <i class="fas fa-chevron-down"></i>
+                        </button>
+                      </div>
+                    </div>
+                    <div class="bg-gray-50 p-3 rounded-lg flex items-center">
+                      <div
+                        class="w-10 h-12 bg-gray-200 mr-3 flex items-center justify-center"
+                      >
+                        <i class="fas fa-mobile-alt text-gray-500"></i>
+                      </div>
+                      <div>
+                        <p class="text-[14px] font-[500]">
+                          SAMSUNG Galaxy S22 5G
+                        </p>
+                        <p class="text-[12px] text-[#0E0071]">Rs. 16,999</p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- 2 -->
+                  <div class="flex-1 mb-17">
+                    <div class="flex justify-between mb-2">
+                      <p class="text-[14px] text-[#333333] font-[500]">
+                        Made an enquiry for Samsung Galaxy Z4 via initiate chat
+                        through Call.
+                      </p>
+                      <div class="flex items-center text-[#657180] text-[12px]">
+                        <span>06/10/23 12:54 PM</span>
+                        <button class="ml-2">
+                          <i class="fas fa-chevron-down"></i>
+                        </button>
+                      </div>
+                    </div>
+                    <div class="bg-gray-50 p-2 rounded-lg flex items-center border-[1px] border-blue-500 mt-3 w-1/4">
+                      <button class="text-blue-500 mr-2">
+                        <i class="fas fa-play-circle"></i>
+                      </button>
+                      <div class="flex-1 mx-2">
+                        <div class="h-1 bg-gray-300 rounded-full relative">
+                          <div
+                            class="h-1 bg-blue-500 rounded-full absolute"
+                            style="width: 40%"
+                          ></div>
+                        </div>
+                      </div>
+                      <div class="text-xs text-gray-500">0:00 / 0:32</div>
+                      <button class="text-gray-400 ml-2 ">
+                        <i class="fas fa-ellipsis-h rotate-90"></i>
+                      </button>
+                    </div>
+                  </div>
+                  <!-- 3 -->
+                  <div class="flex-1 mb-15 mt-17">
+                    <div class="flex justify-between mb-2">
+                      <p class="text-[14px] text-[#333333] font-[500]">
+                        Made an enquiry for Samsung Galaxy Z4 via initiate chat
+                        through Instagram.
+                      </p>
+                      <div class="flex items-center text-[#657180] text-[12px]">
+                        <span>06/10/23 12:54 PM</span>
+                        <button class="ml-2">
+                          <i class="fas fa-chevron-down"></i>
+                        </button>
+                      </div>
+                    </div>
+                    <button class="text-[#0070FC] text-[14px] font-medium  border-[1px] border-[#8DC2FF4E] rounded-[4px] bg-[#F0F7FF] px-3 py-1 ">
+                      VIEW CHAT
+                    </button>
+                  </div>
+                   <!-- 4 -->
+                   <div class="flex-1 mt-20">
+                    <div class="flex justify-between mb-2">
+                      <p class="text-[14px] text-[#333333] font-[500]">
+                        Made a purchase of Samsung Galaxy Z4 at price of
+                        Rs.12,999 only.
+                      </p>
+                      <div class="flex items-center text-[#657180] text-[12px]">
+                        <span>06/10/23 12:54 PM</span>
+                        <button class="ml-2">
+                          <i class="fas fa-chevron-down"></i>
+                        </button>
+                      </div>
+                    </div>
+                    <div class="bg-gray-50 p-3 rounded-lg flex items-center">
+                      <div
+                        class="w-10 h-12 bg-gray-200 mr-3 flex items-center justify-center"
+                      >
+                        <i class="fas fa-mobile-alt text-gray-500"></i>
+                      </div>
+                      <div>
+                        <p class="text-gray-800 font-medium">
+                          SAMSUNG Galaxy S22 5G
+                        </p>
+                        <p class="text-indigo-600">Rs. 16,999</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                 
+                </div>
+               
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+
+
+
